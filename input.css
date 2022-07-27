@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+@layer components {
+    .container{
+        @apply max-w-[1080px]
+    }
+
+    .footer-nav-text{
+        font-size: 2.4vw;
+    }
+}

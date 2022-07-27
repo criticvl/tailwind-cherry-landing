@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon-min.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Tailwind Landing</title>
+</head>
+
+<body class="select-none">
+
+    <button id="darkmode"
+        class="hidden fixed bottom-8 right-8 p-4 rounded-full bg-cherryred md:bottom-0 md:right-0 md:rounded-none md:rounded-tl-full md:p-8 sm:p-6">
+        <img class="w-7" src="./images/darkmode.min.svg" alt="darkmode">
+    </button>
+
+    <header class="relative px-4">
+        <div class="container">
+            <nav class="flex justify-between items-center pt-5">
+                <a href="#"><img class="w-32" src="./images/logo.min.svg" alt="logo"></a>
+
+                <ul class="flex gap-12 font-medium text-xl text-lightblack lg:text-base md:hidden">
+                    <li class="hover:text-cherryred transition-colors"><a href="#">About</a></li>
+                    <li class="hover:text-cherryred transition-colors"><a href="#">Services</a></li>
+                    <li class="hover:text-cherryred transition-colors"><a href="#">Case Studies</a></li>
+                    <li class="hover:text-cherryred transition-colors"><a href="#">Careers</a></li>
+                    <li class="hover:text-cherryred transition-colors"><a href="#">Blog</a></li>
+                </ul>
+
+                <ul id="menu"
+                    class="absolute left-6 right-6 top-28 bg-cherryred flex-col items-center rounded-md hidden">
+                    <li><a class="block py-4 text-white" href="#">About</a></li>
+                    <li><a class="block py-4 text-white" href="#">Services</a></li>
+                    <li><a class="block py-4 text-white" href="#">Case Studies</a></li>
+                    <li><a class="block py-4 text-white" href="#">Careers</a></li>
+                    <li><a class="block py-4 text-white" href="#">Blog</a></li>
+                </ul>
+
+                <button id="burger" class="hidden md:block">
+                    <img class="w-7" src="./images/burger-icon.min.svg" alt="menu">
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="px-6">
+        <section id="hero">
+            <div class="container">
+                <h1
+                    class="pt-24 font-black text-5xl max-w-2xl text-center mx-auto leading-snug lg:text-4xl lg:pt-16 md:text-3xl md:pt-12 md:max-w-full sm:text-2xl sm:pt-10">
+                    Grow Your Business Online.
+                </h1>
+                <h2
+                    class="font-black text-5xl max-w-2xl text-center mx-auto leading-snug lg:text-4xl md:text-3xl md:max-w-full sm:text-2xl">
+                    Get. More. Leads.
+                </h2>
+                <p
+                    class="px-5 text-xl tracking-tight text-center max-w-xl mx-auto mt-4 md:text-lg md:mt-3 sm:text-base sm:mt-2">
+                    Wanna get serious into digital marketing?
+                </p>
+                <p
+                    class="px-5 text-xl tracking-tight text-center max-w-xl mx-auto mt-2 md:text-lg md:mt-1 sm:text-base sm:mt-0">
+                    Then you need leads and this is where we can help you.
+                </p>
+
+                <div class="flex justify-center gap-7 mt-6 sm:flex-col sm:gap-0 sm:mt-0">
+                    <a class="inline-block py-3 px-8 shadow-md rounded-2xl bg-cherryred text-white text-xl tracking-tight font-medium text-center sm:mt-4"
+                        href="#">
+                        Start Here
+                    </a>
+                    <a class="inline-block py-3 px-8 shadow-md rounded-2xl text-xl tracking-tight border-2 border-cherryred text-cherryred font-medium text-center sm:mt-4"
+                        href="#">
+                        Learn More
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="flex justify-around mt-36 pb-32 lg:flex-col lg:mt-32 lg:pb-24">
+                    <div class="flex flex-col w-1/2 lg:w-full">
+                        <h3 class="text-cherryred font-bold text-xl tracking-tight lg:text-lg md:text-base sm:text-sm">
+                            About Us</h3>
+                        <h3 class="mt-1 text-4xl font-black lg:max-w-full lg:text-3xl md:text-2xl sm:text-base">
+                            The team behind the brand.
+                        </h3>
+                        <p class="mt-2 max-w-md text-lg lg:max-w-full md:text-base sm:text-sm">
+                            Proin elementum fermentum auctor.<br>
+                            Nulla semper, in finibus leo nisl ac lectus.<br>
+                            Praesent non urna.<br>
+                            Nulla congue porta lectus in laoreet.<br>
+                            Aenean pellentesque vitae metus id porttitor.<br>
+                        </p>
+                        <a class="inline-block my-1 py-2 px-6 shadow-md rounded-2xl bg-cherryred text-white text-xl tracking-tight font-medium text-center mt-3 max-w-fit lg:text-lg md:text-base sm:text-sm sm:px-4 sm:py-2 sm:max-w-full"
+                            href="#">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="flex flex-col w-1/2 pl-10 lg:w-full lg:pl-0 lg:mt-4">
+                        <img class="rounded-md" src="./images/about.jpg" alt="about">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-darkblue text-white py-14 px-6 md:py-8">
+        <div class="container">
+            <div class="flex gap-40 md:flex-col md:gap-4">
+                <div class="flex flex-col w-2/5 max-w-xs md:max-w-full md:w-full">
+                    <a href="#"><img src="./images/logo.min.svg" alt="logo"></a>
+                    <p class="mt-4 text-xl md:text-lg sm:text-base">Sign up for our newsletter to get latest news from us!</p>
+                    <input
+                        class="mt-3 bg-zinc-800 flex w-full py-3 px-4 rounded-lg border-2 border-zinc-700 focus:outline-none focus:border-cherryred md:py-2 sm:py-1"
+                        type="text" placeholder="Enter your email">
+                    <button
+                        class="inline-block py-1 px-8 shadow-md rounded-xl bg-cherryred text-white text-xl tracking-tight font-medium text-center mt-4 max-w-fit md:text-lg sm:text-base">Submit</button>
+                </div>
+                <div class="w-3/5 font-medium text-xl md:w-full md:text-lg sm:text-base">
+                    <div class="text-cherryred mb-10 md:mb-2 pl-4 md:hidden sm:block sm:pl-0">Jump To</div>
+                    <ul class="flex flex-col md:flex-row md:justify-around md:mt-4 flex-wrap md:footer-nav-text sm:mt-0 sm:flex-col sm:text-sm">
+                        <li class="mt-2 md:mt-1 px-4 md:py-2 sm:p-0"><a href="#">About</a></li>
+                        <li class="mt-2 md:mt-1 px-4 md:py-2 sm:p-0"><a href="#">Contact</a></li>
+                        <li class="mt-2 md:mt-1 px-4 md:py-2 sm:p-0"><a href="#">Services</a></li>
+                        <li class="mt-2 md:mt-1 px-4 md:py-2 sm:p-0"><a href="#">Case Studies</a></li>
+                        <li class="mt-2 md:mt-1 px-4 md:py-2 sm:p-0"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
